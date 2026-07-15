@@ -5,6 +5,21 @@ const { liveCategories, liveStreams } = require("../data/live");
 const { vodCategories, vodStreams } = require("../data/movies");
 const { seriesCategories, series } = require("../data/series");
 const { getShortEpgForChannel } = require("../lib/epg");
+const { getPublicUrl } = require("../lib/publicUrl");
+
+// Our generated posters are stored as relative paths ("/posters/x.svg") in
+// data files; external logos (dummyimage.com, etc.) are already absolute
+// URLs. This resolves only the relative ones against the server's actual
+// public URL, so it works the same on localhost, LAN, or once deployed.
+function resolveUrl(maybeRelative) {
+  if (!maybeRelative) return maybeRelative;
+  if (maybeRelative.startsWith("/")) return getPublicUrl().base + maybeRelative;
+  return maybeRelative;
+}
+
+function withResolvedIcon(item) {
+  return { ...item, stream_icon: resolveUrl(item.stream_icon) };
+}
 
 router.get("/player_api.php", requireAuth, (req, res) => {
   const { action } = req.query;
@@ -26,7 +41,7 @@ router.get("/player_api.php", requireAuth, (req, res) => {
       const filtered = category_id
         ? liveStreams.filter((s) => s.category_id === category_id)
         : liveStreams;
-      return res.json(stripSource(filtered));
+      return res.json(stripSource(filtered).map(withResolvedIcon));
     }
 
     case "get_vod_categories":
@@ -37,7 +52,7 @@ router.get("/player_api.php", requireAuth, (req, res) => {
       const filtered = category_id
         ? vodStreams.filter((s) => s.category_id === category_id)
         : vodStreams;
-      return res.json(stripSource(filtered));
+      return res.json(stripSource(filtered).map(withResolvedIcon));
     }
 
     case "get_vod_info": {
@@ -54,9 +69,9 @@ router.get("/player_api.php", requireAuth, (req, res) => {
           tech_note: movie.tech_note,
           rating: movie.rating,
           releasedate: movie.releasedate,
-          cover_big: movie.stream_icon,
+          cover_big: resolveUrl(movie.stream_icon),
         },
-        movie_data: stripSource([movie])[0],
+        movie_data: withResolvedIcon(stripSource([movie])[0]),
       });
     }
 
@@ -73,7 +88,7 @@ router.get("/player_api.php", requireAuth, (req, res) => {
           series_id: s.series_id,
           name: s.name,
           category_id: s.category_id,
-          cover: s.cover,
+          cover: resolveUrl(s.cover),
           plot: s.plot,
           releaseDate: s.releaseDate,
           rating: s.rating,
@@ -101,7 +116,7 @@ router.get("/player_api.php", requireAuth, (req, res) => {
         info: {
           name: show.name,
           plot: show.plot,
-          cover: show.cover,
+          cover: resolveUrl(show.cover),
           cast: show.cast,
           director: show.director,
           rating: show.rating,

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#bg)"/>
+  <path d="M 0 460 Q 200 380 400 460 L 400 600 L 0 600 Z" fill="#fde047" opacity="0.15"/>
+              <path d="M 60 500 Q 200 440 340 500" stroke="#fde047" stroke-width="3" fill="none" opacity="0.4"/>
+  <rect x="0" y="0" width="400" height="600" fill="#000" opacity="0.08"/>
+  
+  <text x="200" y="280" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#fff" text-anchor="middle" style="letter-spacing:0.5px"><tspan x="200" dy="0">Whitecliff: A</tspan><tspan x="200" dy="42">Hunter's Tale</tspan></text>
+  <line x1="140" y1="354" x2="260" y2="354" stroke="#fde047" stroke-width="2" opacity="0.6"/>
+</svg>

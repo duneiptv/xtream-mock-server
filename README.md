@@ -7,7 +7,31 @@ Implements the standard endpoints your app already expects:
 - `player_api.php` — login, categories, live/VOD/series streams, series info, short EPG
 - `get.php` — M3U playlist export (`type=m3u_plus`)
 - `xmltv.php` — full XMLTV EPG export
-- `/live/...`, `/movie/...`, `/series/...` — stream endpoints that redirect to real, legally-shareable media
+- `/live/...`, `/movie/...`, `/series/...` — stream endpoints (VOD/series proxied through the server; live redirects to source)
+- `/posters/*.svg` — generated poster/cover artwork, served statically
+
+The catalog (30 live channels, 30 movies, 4 series/15 episodes - 75 items
+total) is entirely fictional branding layered on top of verified, working
+public test streams - invented channel names, movie titles, cast, directors,
+studios, and generated poster artwork. See "Content sources" below for what's
+real vs invented, and `/debug/check-sources` to verify what's currently
+reachable from wherever you've deployed this.
+
+## Regenerating poster artwork
+
+Posters in `public/posters/*.svg` are procedurally generated (gradients +
+genre-themed motifs + title typography), not stock photos or AI images -
+see `scripts/generate-posters.js`. If you add/rename a movie or series in
+`data/movies.js` / `data/series.js`, regenerate:
+
+```bash
+node scripts/generate-posters.js
+```
+
+This reads the catalog, matches each entry's `category_id` to a visual
+theme (color gradient + motif - circuits for sci-fi, wings for fantasy,
+film-reel circles for the archive category, etc.), and writes/overwrites the
+corresponding SVG. Safe to re-run any time - it's deterministic per slug.
 
 ## Setup
 

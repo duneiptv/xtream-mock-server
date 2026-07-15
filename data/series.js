@@ -7,8 +7,8 @@ const seriesCategories = [
   { category_id: "21", category_name: "Fantasy & Sci-Fi Series", parent_id: 0 },
 ];
 
-function poster(seed) {
-  return `https://picsum.photos/seed/${encodeURIComponent(seed)}/400/600`;
+function poster(slug) {
+  return `/posters/series-${slug}.svg`;
 }
 
 const SRC = {
@@ -44,7 +44,7 @@ const series = [
     series_id: 301,
     name: "The Kriek Files",
     category_id: "21",
-    cover: poster("kriek-files-series"),
+    cover: poster("kriek-files"),
     plot: "A disbanded task force reunites one final time to investigate the machine uprising that ended their careers - and nearly ended everything else.",
     releaseDate: "2021-03-01",
     rating: "7.8",
@@ -72,7 +72,7 @@ const series = [
     series_id: 302,
     name: "Mythwood Tales",
     category_id: "21",
-    cover: poster("mythwood-tales-series"),
+    cover: poster("mythwood-tales"),
     plot: "Anthology series following different wanderers through the same scarred, dragon-haunted world - each episode a self-contained story of loss and searching.",
     releaseDate: "2022-09-10",
     rating: "8.2",
@@ -94,7 +94,7 @@ const series = [
     series_id: 303,
     name: "Bramblewood Kids",
     category_id: "20",
-    cover: poster("bramblewood-kids-series"),
+    cover: poster("bramblewood-kids"),
     plot: "The Saturday-morning spin-off - shorter, sillier episodes following the meadow crew's day-to-day misadventures.",
     releaseDate: "2023-06-01",
     rating: "7.5",

@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const morgan = require("morgan");
 const { generateXmltv } = require("./lib/epg");
 const { findUser } = require("./data/users");
@@ -10,6 +11,10 @@ const PORT = process.env.PORT || 8080;
 const HOST = "0.0.0.0"; // bind all interfaces - required by every hosting platform, and for LAN device testing
 
 app.use(morgan("dev"));
+
+// Generated poster artwork (see scripts/generate-posters.js) - served as
+// static files so /posters/<slug>.svg resolves to a real URL for clients.
+app.use("/posters", express.static(path.join(__dirname, "public", "posters")));
 
 // Protects against the endpoint getting hammered by bots scanning for open
 // Xtream servers, or a misbehaving test client retrying in a loop. Tune via
