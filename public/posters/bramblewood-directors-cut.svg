@@ -1,14 +1,28 @@
 <svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#dc2626"/>
+    <linearGradient id="sky-bramblewood-directors-cut" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="scrim-bramblewood-directors-cut" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.85"/>
     </linearGradient>
   </defs>
-  <rect width="400" height="600" fill="url(#bg)"/>
-  <circle cx="104" cy="516" r="26" fill="#fef3c7" opacity="0.18"/><circle cx="296" cy="468" r="26" fill="#fef3c7" opacity="0.18"/><circle cx="40" cy="428" r="22" fill="#fef3c7" opacity="0.18"/><circle cx="40" cy="456" r="30" fill="#fef3c7" opacity="0.18"/><circle cx="40" cy="392" r="14" fill="#fef3c7" opacity="0.18"/><circle cx="296" cy="392" r="18" fill="#fef3c7" opacity="0.18"/>
-  <rect x="0" y="0" width="400" height="600" fill="#000" opacity="0.08"/>
+  <rect width="400" height="600" fill="url(#sky-bramblewood-directors-cut)"/>
+  <circle cx="320" cy="90" r="46" fill="#fef3c7" opacity="0.9"/>
+        <path d="M 0 600 L 0 460 Q 100 444 200 444 T 400 460 L 400 600 Z" fill="#22c55e" opacity="0.9"/>
+        <path d="M 0 600 L 0 500 Q 100 488 200 500 T 400 484 L 400 600 Z" fill="#15803d" opacity="1"/>
+        <ellipse cx="84" cy="383.6" rx="52.800000000000004" ry="57.599999999999994" fill="#166534"/>
+          <rect x="78.24" y="426.8" width="11.52" height="43.2" fill="#166534"/><ellipse cx="132" cy="374.6" rx="58.300000000000004" ry="63.599999999999994" fill="#166534"/>
+          <rect x="125.64" y="422.3" width="12.719999999999999" height="47.7" fill="#166534"/><ellipse cx="108" cy="387.2" rx="50.6" ry="55.199999999999996" fill="#166534"/>
+          <rect x="102.48" y="428.6" width="11.04" height="41.4" fill="#166534"/><ellipse cx="140" cy="372.8" rx="59.400000000000006" ry="64.8" fill="#166534"/>
+          <rect x="133.52" y="421.4" width="12.959999999999999" height="48.6" fill="#166534"/><ellipse cx="308" cy="398" rx="44" ry="48" fill="#166534"/>
+          <rect x="303.2" y="434" width="9.6" height="36" fill="#166534"/>
   
-  <text x="200" y="260" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#fff" text-anchor="middle" style="letter-spacing:0.5px"><tspan x="200" dy="0">Bramblewood</tspan><tspan x="200" dy="42">Chronicles:</tspan><tspan x="200" dy="42">Director's Cut</tspan></text>
-  <line x1="140" y1="376" x2="260" y2="376" stroke="#fef3c7" stroke-width="2" opacity="0.6"/>
+  <rect x="0" y="382" width="400" height="218" fill="url(#scrim-bramblewood-directors-cut)"/>
+  <text x="200" y="408" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2.5" fill="#fff7ed" text-anchor="middle">ANIMATED ADVENTURE</text>
+  <text x="200" y="444" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="200" dy="0">Bramblewood</tspan><tspan x="200" dy="38">Chronicles:</tspan><tspan x="200" dy="38">Director's Cut</tspan></text>
+  <text x="200" y="584" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="0.5" fill="#d4d4d8" text-anchor="middle" opacity="0.85">STARRING NOOR HARTLEY · DIRECTED BY IDRIS OKONKWO</text>
+  <rect x="6" y="6" width="388" height="588" fill="none" stroke="#fff" stroke-width="1" opacity="0.15"/>
 </svg>

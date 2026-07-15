@@ -1,14 +1,21 @@
 <svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="sky-cognition-engine" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#18181b"/>
       <stop offset="100%" stop-color="#3f3f46"/>
     </linearGradient>
+    <linearGradient id="scrim-cognition-engine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.85"/>
+    </linearGradient>
   </defs>
-  <rect width="400" height="600" fill="url(#bg)"/>
-  <line x1="0" y1="60" x2="400" y2="20" stroke="#f472b6" stroke-width="1" opacity="0.15"/><line x1="0" y1="120" x2="400" y2="80" stroke="#f472b6" stroke-width="1" opacity="0.15"/><line x1="0" y1="180" x2="400" y2="140" stroke="#f472b6" stroke-width="1" opacity="0.15"/><line x1="0" y1="240" x2="400" y2="200" stroke="#f472b6" stroke-width="1" opacity="0.15"/><line x1="0" y1="300" x2="400" y2="260" stroke="#f472b6" stroke-width="1" opacity="0.15"/><line x1="0" y1="360" x2="400" y2="320" stroke="#f472b6" stroke-width="1" opacity="0.15"/><line x1="0" y1="420" x2="400" y2="380" stroke="#f472b6" stroke-width="1" opacity="0.15"/><line x1="0" y1="480" x2="400" y2="440" stroke="#f472b6" stroke-width="1" opacity="0.15"/>
-  <rect x="0" y="0" width="400" height="600" fill="#000" opacity="0.08"/>
+  <rect width="400" height="600" fill="url(#sky-cognition-engine)"/>
+  <rect x="208" y="404" width="20" height="20" fill="#f472b6" opacity="0.14" transform="rotate(153 208 404)"/><rect x="384" y="320" width="54" height="54" fill="#f472b6" opacity="0.1" transform="rotate(192 384 320)"/><rect x="208" y="208" width="26" height="26" fill="#f472b6" opacity="0.08" transform="rotate(328 208 208)"/><rect x="272" y="156" width="88" height="88" fill="#f472b6" opacity="0.22000000000000003" transform="rotate(16 272 156)"/><rect x="368" y="348" width="50" height="50" fill="#f472b6" opacity="0.15000000000000002" transform="rotate(112 368 348)"/><rect x="384" y="248" width="74" height="74" fill="#f472b6" opacity="0.15000000000000002" transform="rotate(296 384 248)"/><circle cx="200" cy="300" r="70" fill="none" stroke="#f472b6" stroke-width="2" opacity="0.5"/>
+        <circle cx="200" cy="300" r="20" fill="#f472b6" opacity="0.6"/>
   
-  <text x="200" y="280" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#fff" text-anchor="middle" style="letter-spacing:0.5px"><tspan x="200" dy="0">The Cognition</tspan><tspan x="200" dy="42">Engine</tspan></text>
-  <line x1="140" y1="354" x2="260" y2="354" stroke="#f472b6" stroke-width="2" opacity="0.6"/>
+  <rect x="0" y="420" width="400" height="180" fill="url(#scrim-cognition-engine)"/>
+  <text x="200" y="446" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2.5" fill="#f472b6" text-anchor="middle">ARTHOUSE</text>
+  <text x="200" y="482" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="200" dy="0">The Cognition</tspan><tspan x="200" dy="38">Engine</tspan></text>
+  <text x="200" y="584" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="0.5" fill="#d4d4d8" text-anchor="middle" opacity="0.85">STARRING CLARA BERGSTRÖM · DIRECTED BY KAIA MUNRO</text>
+  <rect x="6" y="6" width="388" height="588" fill="none" stroke="#fff" stroke-width="1" opacity="0.15"/>
 </svg>

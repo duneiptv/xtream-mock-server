@@ -1,19 +1,25 @@
 <svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="sky-studio-frame-7" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#451a03"/>
       <stop offset="100%" stop-color="#78350f"/>
     </linearGradient>
+    <linearGradient id="scrim-studio-frame-7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.85"/>
+    </linearGradient>
   </defs>
-  <rect width="400" height="600" fill="url(#bg)"/>
-  <circle cx="120" cy="480" r="55" fill="none" stroke="#fef08a" stroke-width="3" opacity="0.35"/>
-              <circle cx="280" cy="480" r="55" fill="none" stroke="#fef08a" stroke-width="3" opacity="0.35"/>
-              <circle cx="120" cy="480" r="10" fill="#fef08a" opacity="0.4"/>
-              <circle cx="280" cy="480" r="10" fill="#fef08a" opacity="0.4"/>
-              <line x1="175" y1="480" x2="225" y2="480" stroke="#fef08a" stroke-width="3" opacity="0.35"/>
-  <rect x="0" y="0" width="400" height="600" fill="#000" opacity="0.08"/>
-  <rect x="20" y="20" width="70" height="28" rx="6" fill="#fef08a" opacity="0.9"/>
-       <text x="55" y="39" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#111" text-anchor="middle">ARCHIVE</text>
-  <text x="200" y="280" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#fff" text-anchor="middle" style="letter-spacing:0.5px"><tspan x="200" dy="0">Studio Frame 7:</tspan><tspan x="200" dy="42">Calibration</tspan></text>
-  <line x1="140" y1="354" x2="260" y2="354" stroke="#fef08a" stroke-width="2" opacity="0.6"/>
+  <rect width="400" height="600" fill="url(#sky-studio-frame-7)"/>
+  <rect x="60" y="150" width="280" height="200" rx="10" fill="none" stroke="#fef08a" stroke-width="4" opacity="0.55"/>
+    <circle cx="80" cy="130" r="6" fill="#fef08a" opacity="0.5"/>
+    <line x1="70" y1="165" x2="330" y2="165" stroke="#fef08a" stroke-width="1" opacity="0.17"/><line x1="70" y1="183" x2="330" y2="183" stroke="#fef08a" stroke-width="1" opacity="0.13"/><line x1="70" y1="201" x2="330" y2="201" stroke="#fef08a" stroke-width="1" opacity="0.14"/><line x1="70" y1="219" x2="330" y2="219" stroke="#fef08a" stroke-width="1" opacity="0.16"/><line x1="70" y1="237" x2="330" y2="237" stroke="#fef08a" stroke-width="1" opacity="0.11"/><line x1="70" y1="255" x2="330" y2="255" stroke="#fef08a" stroke-width="1" opacity="0.2"/><line x1="70" y1="273" x2="330" y2="273" stroke="#fef08a" stroke-width="1" opacity="0.2"/><line x1="70" y1="291" x2="330" y2="291" stroke="#fef08a" stroke-width="1" opacity="0.1"/><line x1="70" y1="309" x2="330" y2="309" stroke="#fef08a" stroke-width="1" opacity="0.18"/><line x1="70" y1="327" x2="330" y2="327" stroke="#fef08a" stroke-width="1" opacity="0.15000000000000002"/>
+    <circle cx="120" cy="480" r="45" fill="none" stroke="#fef08a" stroke-width="3" opacity="0.4"/>
+    <circle cx="280" cy="480" r="45" fill="none" stroke="#fef08a" stroke-width="3" opacity="0.4"/>
+    <line x1="163" y1="480" x2="237" y2="480" stroke="#fef08a" stroke-width="3" opacity="0.4"/>
+  <circle cx="340" cy="60" r="28" fill="none" stroke="#fef08a" stroke-width="3" opacity="0.5"/><circle cx="355.4" cy="60" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/><circle cx="347.7" cy="73.33679121828035" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/><circle cx="332.3" cy="73.33679121828035" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/><circle cx="324.6" cy="60" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/><circle cx="332.3" cy="46.663208781719646" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/><circle cx="347.7" cy="46.663208781719646" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/>
+  <rect x="0" y="440" width="400" height="160" fill="url(#scrim-studio-frame-7)"/>
+  <text x="200" y="466" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2.5" fill="#fef08a" text-anchor="middle">ARCHIVE REEL</text>
+  <text x="200" y="502" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="200" dy="0">Studio Frame 7:</tspan><tspan x="200" dy="38">Calibration</tspan></text>
+  
+  <rect x="6" y="6" width="388" height="588" fill="none" stroke="#fff" stroke-width="1" opacity="0.15"/>
 </svg>

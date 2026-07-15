@@ -1,16 +1,28 @@
 <svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#14532d"/>
-      <stop offset="100%" stop-color="#78350f"/>
+    <linearGradient id="sky-series-mythwood-tales" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c2d12"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="scrim-series-mythwood-tales" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.85"/>
     </linearGradient>
   </defs>
-  <rect width="400" height="600" fill="url(#bg)"/>
-  <path d="M 0 460 Q 200 380 400 460 L 400 600 L 0 600 Z" fill="#fde047" opacity="0.15"/>
-              <path d="M 60 500 Q 200 440 340 500" stroke="#fde047" stroke-width="3" fill="none" opacity="0.4"/>
-  <rect x="0" y="0" width="400" height="600" fill="#000" opacity="0.08"/>
-  <rect x="20" y="20" width="70" height="28" rx="6" fill="#fde047" opacity="0.9"/>
-       <text x="55" y="39" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#111" text-anchor="middle">SERIES</text>
-  <text x="200" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#fff" text-anchor="middle" style="letter-spacing:0.5px"><tspan x="200" dy="0">Mythwood Tales</tspan></text>
-  <line x1="140" y1="332" x2="260" y2="332" stroke="#fde047" stroke-width="2" opacity="0.6"/>
+  <rect width="400" height="600" fill="url(#sky-series-mythwood-tales)"/>
+  
+      <circle cx="90" cy="110" r="38" fill="#fde68a" opacity="0.8"/>
+      <path d="M 0 600 L 0 420 L 28 296 L 60 404 L 80 340 L 120 416 L 148 296 L 180 420 L 204 332 L 240 420 L 264 332 L 300 404 L 332 320 L 360 404 L 388 360 L 420 404 L 400 600 Z" fill="#1e3a2f" opacity="0.7"/>
+      <path d="M 0 600 L 0 480 L 32 420 L 60 464 L 88 412 L 120 480 L 156 420 L 180 472 L 216 432 L 240 464 L 272 424 L 300 468 L 320 396 L 360 464 L 388 384 L 420 480 L 400 600 Z" fill="#14291f" opacity="0.9"/>
+      <g transform="translate(260,180) scale(1.1)" opacity="0.85">
+    <path d="M -60 10 Q -30 -30 0 -5 Q 30 -30 60 10 Q 30 0 15 15 Q 5 5 0 15 Q -5 5 -15 15 Q -30 0 -60 10 Z" fill="#0f172a"/>
+    <ellipse cx="0" cy="15" rx="45" ry="9" fill="#0f172a"/>
+    <path d="M 45 15 Q 70 10 85 22 Q 68 20 55 22 Z" fill="#0f172a"/>
+  </g>
+  
+  <rect x="0" y="458" width="400" height="142" fill="url(#scrim-series-mythwood-tales)"/>
+  <text x="200" y="484" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2.5" fill="#fde047" text-anchor="middle">SERIES</text>
+  <text x="200" y="520" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="200" dy="0">Mythwood Tales</tspan></text>
+  <text x="200" y="584" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="0.5" fill="#d4d4d8" text-anchor="middle" opacity="0.85">STARRING ELENA VOSS</text>
+  <rect x="6" y="6" width="388" height="588" fill="none" stroke="#fff" stroke-width="1" opacity="0.15"/>
 </svg>

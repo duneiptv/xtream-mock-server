@@ -19,19 +19,39 @@ reachable from wherever you've deployed this.
 
 ## Regenerating poster artwork
 
-Posters in `public/posters/*.svg` are procedurally generated (gradients +
-genre-themed motifs + title typography), not stock photos or AI images -
-see `scripts/generate-posters.js`. If you add/rename a movie or series in
-`data/movies.js` / `data/series.js`, regenerate:
+Posters in `public/posters/*.svg` are procedurally generated illustrated
+scenes (not stock photos or AI images) - see `scripts/generate-posters.js`.
+Each genre gets its own composed scene: a starfield/planet/circuit-grid
+skyline for sci-fi, mountains + a dragon silhouette for fantasy, a sheep
+silhouette + storm crack for dark comedy, a vintage TV frame for the archive
+category, sound rings + an equalizer + a CC badge for the multi-audio/
+subtitle category, and so on - laid out with a bottom text scrim, genre tag,
+title, and a credits line, closer to how an actual poster is composed. If
+you add/rename a movie or series in `data/movies.js` / `data/series.js`,
+regenerate:
 
 ```bash
 node scripts/generate-posters.js
 ```
 
-This reads the catalog, matches each entry's `category_id` to a visual
-theme (color gradient + motif - circuits for sci-fi, wings for fantasy,
-film-reel circles for the archive category, etc.), and writes/overwrites the
-corresponding SVG. Safe to re-run any time - it's deterministic per slug.
+## Why HLS (.m3u8) sources redirect but MP4 sources proxy
+
+`routes/streams.js` picks the delivery method per source rather than using
+one policy for everything:
+
+- **MP4 sources are proxied** (server fetches the file and streams the bytes
+  through, forwarding `Range` for seeking) - safe because it's a single
+  file with nothing to break.
+- **HLS (`.m3u8`) sources always redirect** instead. An HLS manifest lists
+  its own segment/variant URLs as paths *relative to whatever URL the
+  client fetched the manifest from*. Proxying an `.m3u8` through our own
+  domain means the client resolves those relative paths against our server
+  instead of the real origin - the manifest loads fine, but every segment
+  request then 404s and nothing plays. This was the actual cause of the
+  Multi-Audio & Subtitle category (and any other HLS-based movie) failing
+  outright - every entry in it was HLS and was being proxied. Redirecting
+  those instead fixes it, since the client then talks to the real origin
+  directly and all relative paths resolve correctly.
 
 ## Setup
 

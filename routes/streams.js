@@ -27,32 +27,34 @@ function parseStreamId(param) {
   return Number(String(param).split(".")[0]);
 }
 
-// A realistic browser UA/Accept set. Some CDNs and origins (we confirmed
-// this ourselves with Google's sample bucket) apply stricter bot-detection
-// to requests with no User-Agent or an obviously non-browser one - datacenter
-// hosting IPs (Render, Railway, AWS, etc.) get extra scrutiny on top of that.
-// This won't guarantee every origin lets us through, but it removes the
-// most common and cheapest reason to get blocked.
+function isHls(sourceUrl) {
+  return sourceUrl.includes(".m3u8");
+}
+
 const PROXY_HEADERS = {
   "User-Agent":
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
   Accept: "*/*",
 };
 
-// Proxies the actual media bytes through OUR server instead of a 302
-// redirect. This matters for two reasons:
-//  1. Some origins apply hotlink/bot-detection to requests that arrive with
-//     a media-player User-Agent, no session history, or come from a known
-//     datacenter IP range (this is what broke Google's sample bucket for
-//     us) - a server-to-server fetch with browser-like headers avoids the
-//     cheapest version of that.
-//  2. Some IPTV clients (especially certain Smart TV players) don't reliably
-//     follow 3xx redirects for streaming URLs, particularly once Range
-//     requests (seeking) are involved.
-// Forwards the client's Range header upstream so seeking/scrubbing works,
-// and mirrors the upstream status/headers back. On failure, returns a
-// detailed JSON error (upstream status + reason) instead of failing silently
-// - check Render's logs, or hit the URL directly in a browser, to see this.
+// Proxies a DIRECT FILE (mp4, etc.) through our server instead of a 302
+// redirect. This is safe for single-file media because there's nothing to
+// break: the whole response is one binary stream, so serving it via our own
+// domain doesn't change how the client interprets it. Useful because some
+// origins apply hotlink/bot-detection to requests that look like they're
+// coming from a media player or a datacenter IP (this is what broke
+// Google's sample bucket for us) - a server-to-server fetch with
+// browser-like headers avoids the cheapest version of that.
+//
+// IMPORTANT: this must NEVER be used for .m3u8 (HLS) sources. An HLS
+// manifest lists its own segment/variant URLs as paths *relative to
+// whatever URL the client fetched the manifest from*. If we proxy the
+// manifest through our own domain, the client resolves those relative
+// paths against OUR server instead of the real origin, and every segment
+// request 404s - the manifest loads but nothing ever plays. This was the
+// actual bug behind "none of the multi-audio/subtitle VODs work": every
+// item in that category was HLS and was being proxied. HLS sources use
+// redirectStream instead - see below.
 async function proxyStream(sourceUrl, req, res) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 15000);
@@ -96,6 +98,19 @@ async function proxyStream(sourceUrl, req, res) {
   }
 }
 
+// HLS (.m3u8) sources always redirect - see the long comment above for why
+// proxying breaks them. The sources used here are all public test/demo
+// infrastructure built specifically to be hotlinked, so a redirect is both
+// correct and reliable for them.
+function redirectStream(sourceUrl, req, res) {
+  return res.redirect(302, sourceUrl);
+}
+
+// Picks the right delivery method per source instead of a blanket policy.
+function serveStream(sourceUrl, req, res) {
+  return isHls(sourceUrl) ? redirectStream(sourceUrl, req, res) : proxyStream(sourceUrl, req, res);
+}
+
 router.get("/live/:username/:password/:streamFile", async (req, res) => {
   const auth = checkAuth(req.params.username, req.params.password);
   if (!auth.ok) return res.status(auth.code).json({ error: auth.reason });
@@ -104,11 +119,9 @@ router.get("/live/:username/:password/:streamFile", async (req, res) => {
   const channel = liveStreams.find((s) => s.stream_id === streamId);
   if (!channel) return res.status(404).json({ error: "channel not found" });
 
-  // Live HLS playlists reference their own segment URLs relatively, so a
-  // full proxy would need to rewrite the manifest - out of scope here.
-  // A redirect works fine for these since they're all public test/demo
-  // infrastructure built specifically to be hotlinked.
-  return res.redirect(302, channel.source);
+  // All current live sources are HLS, but route through serveStream() for
+  // consistency and in case an MP4 "loop channel" source is added later.
+  return serveStream(channel.source, req, res);
 });
 
 router.get("/movie/:username/:password/:streamFile", async (req, res) => {
@@ -119,7 +132,7 @@ router.get("/movie/:username/:password/:streamFile", async (req, res) => {
   const movie = vodStreams.find((s) => s.stream_id === streamId);
   if (!movie) return res.status(404).json({ error: "movie not found" });
 
-  return proxyStream(movie.source, req, res);
+  return serveStream(movie.source, req, res);
 });
 
 router.get("/series/:username/:password/:episodeFile", async (req, res) => {
@@ -137,7 +150,7 @@ router.get("/series/:username/:password/:episodeFile", async (req, res) => {
   );
   if (!found) return res.status(404).json({ error: "episode not found" });
 
-  return proxyStream(found.source, req, res);
+  return serveStream(found.source, req, res);
 });
 
 module.exports = router;
