@@ -137,27 +137,42 @@ http://<your-ip>:8080/get.php?username=test&password=test&type=m3u_plus&output=t
 
 ## Content sources
 
-The catalog now has 28 playable items (11 live channels, 14 movies, 3 series
-episodes) across live/VOD/series, all pointing at verified, widely-used
-public test infrastructure instead of one-off links:
+The catalog now has 27 playable items (13 live channels, 11 movies, 3 series
+episodes), all pointing at sources verified directly (not just found in a
+search result) - either fetched and confirmed, or cross-checked against
+their own official listing page:
 
-- **Movies & series episodes**: served from Google's `gtv-videos-bucket`
-  sample set (`storage.googleapis.com/gtv-videos-bucket/sample/...`) —
-  published by Google for Chromecast/Google TV sample-app testing and used
-  as the de facto standard public test-video set across the industry for
-  years. Includes the Blender Foundation's Creative Commons (CC-BY) short
-  films (Big Buck Bunny, Elephants Dream, Sintel, Tears of Steel) plus
-  several Google-produced demo/ad clips also released for public sample use.
+- **Movies & series episodes**: served from **Internet Archive**
+  (`archive.org/details/Sintel_201709`), which hosts the Blender Foundation's
+  Creative Commons (CC-BY) films specifically for public redistribution.
+  This replaced Google's old `gtv-videos-bucket` sample set, which turned
+  out to have started blocking hotlinked/non-browser requests at some
+  point - that's what was causing the "bad HTTP status" VOD errors. A few
+  movies also use Apple's and Mux's own public HLS test streams.
 - **Live channels**: Apple's official public HLS test streams (`bipbop`
-  variants — the same ones Apple's own developer docs use), Mux's public
-  test streams (`test-streams.mux.dev`), Akamai's public live test feeds,
-  and a couple of the same Google-bucket movies looped as "channels." NASA's
-  public stream is also included but is the least stable of the bunch (see
-  warning below).
+  variants), Mux's public test streams (`test-streams.mux.dev`), Akamai's
+  public live test feeds, JW Player's public demo feed, and NASA TV (now
+  pointed at their current `akamaized.net` endpoint - their old one had
+  moved).
 
-⚠️ **Third-party URLs can rot.** NASA in particular has changed its public
-stream endpoint before, and any of these could theoretically go down. If a
-channel or movie stops playing:
+### Why VOD is proxied instead of redirected
+
+`/movie/...` and `/series/...` requests no longer 302-redirect to the
+source - the server now fetches the content itself and streams the bytes
+through, forwarding the client's `Range` header for seeking. This fixes the
+underlying reliability problem, not just the symptom: a redirect only works
+as well as the destination's own hotlink/bot-detection policy, and some
+players don't follow redirects reliably for streaming URLs in the first
+place. A server-to-server fetch sidesteps both issues.
+
+`/live/...` still redirects, since HLS playlists reference their own
+segment URLs relatively - proxying them properly would require rewriting
+the manifest, which is more than this mock server needs. The live sources
+here are all public test/demo infrastructure built specifically to be
+hotlinked, so redirects are the right tool for them.
+
+⚠️ **Third-party URLs can still rot** even after all this. If a channel or
+movie stops playing:
 1. Open `data/live.js` or `data/movies.js` and find the entry by `stream_id`.
 2. Swap the `source` value for a fresh one. Good places to find current
    public test streams: [Apple's HLS examples
