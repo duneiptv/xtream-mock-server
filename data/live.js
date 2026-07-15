@@ -47,12 +47,15 @@ const liveStreams = [
   },
   {
     num: 4,
-    name: "Sintel (Loop, HLS)",
+    name: "Sintel (Loop, MP4)",
     stream_type: "live",
     stream_id: 103,
     stream_icon: "https://picsum.photos/seed/sintelloop/300/300",
     category_id: "2",
-    source: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
+    // bitdash-a.akamaihd.net returned 403 on /debug/check-sources - that
+    // domain is a known-flaky deprecated Bitmovin demo host, so swapped for
+    // the same Archive.org file already confirmed working as movie 202.
+    source: "https://archive.org/download/Sintel_201709/Sintel.mp4",
     epg_channel_id: "sintel.loop",
   },
   {
