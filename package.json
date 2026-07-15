@@ -1,0 +1,15 @@
+{
+  "name": "xtream-mock-server",
+  "version": "1.0.0",
+  "description": "Local mock Xtream Codes server for IPTV app testing (copyright-free sample content)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  }
+}
