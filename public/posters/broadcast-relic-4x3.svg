@@ -19,7 +19,7 @@
   <circle cx="340" cy="60" r="28" fill="none" stroke="#fef08a" stroke-width="3" opacity="0.5"/><circle cx="355.4" cy="60" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/><circle cx="347.7" cy="73.33679121828035" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/><circle cx="332.3" cy="73.33679121828035" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/><circle cx="324.6" cy="60" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/><circle cx="332.3" cy="46.663208781719646" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/><circle cx="347.7" cy="46.663208781719646" r="4.48" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5"/>
   <rect x="0" y="440" width="400" height="160" fill="url(#scrim-broadcast-relic-4x3)"/>
   <text x="200" y="466" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2.5" fill="#fef08a" text-anchor="middle">ARCHIVE REEL</text>
-  <text x="200" y="502" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="200" dy="0">Broadcast Relic</tspan><tspan x="200" dy="38">4:3</tspan></text>
+  <text x="200" y="502" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="200" dy="0">Broadcast Relic</tspan><tspan x="200" dy="38">4x3</tspan></text>
   
   <rect x="6" y="6" width="388" height="588" fill="none" stroke="#fff" stroke-width="1" opacity="0.15"/>
 </svg>

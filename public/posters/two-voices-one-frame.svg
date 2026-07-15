@@ -19,7 +19,7 @@
   
   <rect x="0" y="420" width="400" height="180" fill="url(#scrim-two-voices-one-frame)"/>
   <text x="200" y="446" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2.5" fill="#5eead4" text-anchor="middle">MULTI-AUDIO / SUBTITLES</text>
-  <text x="200" y="482" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="200" dy="0">Two Voices, One</tspan><tspan x="200" dy="38">Frame</tspan></text>
+  <text x="200" y="482" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="200" dy="0">Two Voices: One</tspan><tspan x="200" dy="38">Frame</tspan></text>
   <text x="200" y="584" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="0.5" fill="#d4d4d8" text-anchor="middle" opacity="0.85">STARRING VOICE WORK: DARIO CASTELLANO · DIRECTED BY SELENE OKONKWO</text>
   <rect x="6" y="6" width="388" height="588" fill="none" stroke="#fff" stroke-width="1" opacity="0.15"/>
 </svg>

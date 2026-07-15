@@ -4,7 +4,7 @@
 
 const seriesCategories = [
   { category_id: "20", category_name: "Demo Series", parent_id: 0 },
-  { category_id: "21", category_name: "Fantasy & Sci-Fi Series", parent_id: 0 },
+  { category_id: "21", category_name: "Fantasy and Sci-Fi Series", parent_id: 0 },
 ];
 
 function poster(slug) {

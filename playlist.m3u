@@ -1,151 +1,151 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="meridian.news" tvg-name="Meridian World News" tvg-logo="https://dummyimage.com/400x400/0f172a/38bdf8.png&text=MW" group-title="World News Network",Meridian World News
+#EXTINF:-1 tvg-id="meridian.news" tvg-name="Meridian World News" tvg-logo="https://dummyimage.com/400x400/0f172a/38bdf8.png?text=MW" group-title="Live - World News Network",Meridian World News
 https://xtream-mock.onrender.com/live/test/test/130.m3u8
-#EXTINF:-1 tvg-id="northstar.news" tvg-name="Northstar Daily News" tvg-logo="https://dummyimage.com/400x400/0f172a/38bdf8.png&text=ND" group-title="World News Network",Northstar Daily News
+#EXTINF:-1 tvg-id="northstar.news" tvg-name="Northstar Daily News" tvg-logo="https://dummyimage.com/400x400/0f172a/38bdf8.png?text=ND" group-title="Live - World News Network",Northstar Daily News
 https://xtream-mock.onrender.com/live/test/test/131.m3u8
-#EXTINF:-1 tvg-id="horizon24.news" tvg-name="Horizon 24 News" tvg-logo="https://dummyimage.com/400x400/0f172a/38bdf8.png&text=H24" group-title="World News Network",Horizon 24 News
+#EXTINF:-1 tvg-id="horizon24.news" tvg-name="Horizon 24 News" tvg-logo="https://dummyimage.com/400x400/0f172a/38bdf8.png?text=H24" group-title="Live - World News Network",Horizon 24 News
 https://xtream-mock.onrender.com/live/test/test/132.m3u8
-#EXTINF:-1 tvg-id="bubblegum.kids" tvg-name="Bubblegum Burrow TV" tvg-logo="https://dummyimage.com/400x400/fbbf24/1e1b4b.png&text=BB" group-title="Kids & Animation",Bubblegum Burrow TV
+#EXTINF:-1 tvg-id="bubblegum.kids" tvg-name="Bubblegum Burrow TV" tvg-logo="https://dummyimage.com/400x400/fbbf24/1e1b4b.png?text=BB" group-title="Live - Kids and Animation",Bubblegum Burrow TV
 https://xtream-mock.onrender.com/live/test/test/105.m3u8
-#EXTINF:-1 tvg-id="snickerdoodle.kids" tvg-name="Snickerdoodle Cartoons" tvg-logo="https://dummyimage.com/400x400/fbbf24/1e1b4b.png&text=SC" group-title="Kids & Animation",Snickerdoodle Cartoons
+#EXTINF:-1 tvg-id="snickerdoodle.kids" tvg-name="Snickerdoodle Cartoons" tvg-logo="https://dummyimage.com/400x400/fbbf24/1e1b4b.png?text=SC" group-title="Live - Kids and Animation",Snickerdoodle Cartoons
 https://xtream-mock.onrender.com/live/test/test/106.m3u8
-#EXTINF:-1 tvg-id="rascalridge.kids" tvg-name="Rascal Ridge Kids" tvg-logo="https://dummyimage.com/400x400/fbbf24/1e1b4b.png&text=RR" group-title="Kids & Animation",Rascal Ridge Kids
+#EXTINF:-1 tvg-id="rascalridge.kids" tvg-name="Rascal Ridge Kids" tvg-logo="https://dummyimage.com/400x400/fbbf24/1e1b4b.png?text=RR" group-title="Live - Kids and Animation",Rascal Ridge Kids
 https://xtream-mock.onrender.com/live/test/test/107.m3u8
-#EXTINF:-1 tvg-id="gigglegrove.kids" tvg-name="Giggle Grove Junior" tvg-logo="https://dummyimage.com/400x400/fbbf24/1e1b4b.png&text=GG" group-title="Kids & Animation",Giggle Grove Junior
+#EXTINF:-1 tvg-id="gigglegrove.kids" tvg-name="Giggle Grove Junior" tvg-logo="https://dummyimage.com/400x400/fbbf24/1e1b4b.png?text=GG" group-title="Live - Kids and Animation",Giggle Grove Junior
 https://xtream-mock.onrender.com/live/test/test/108.m3u8
-#EXTINF:-1 tvg-id="ironclad.scifi" tvg-name="Ironclad Sci-Fi Network" tvg-logo="https://dummyimage.com/400x400/1e1b4b/a78bfa.png&text=IC" group-title="Sci-Fi & Fantasy",Ironclad Sci-Fi Network
+#EXTINF:-1 tvg-id="ironclad.scifi" tvg-name="Ironclad Sci-Fi Network" tvg-logo="https://dummyimage.com/400x400/1e1b4b/a78bfa.png?text=IC" group-title="Live - Sci-Fi and Fantasy",Ironclad Sci-Fi Network
 https://xtream-mock.onrender.com/live/test/test/109.m3u8
-#EXTINF:-1 tvg-id="nebulanine.scifi" tvg-name="Nebula Nine TV" tvg-logo="https://dummyimage.com/400x400/1e1b4b/a78bfa.png&text=N9" group-title="Sci-Fi & Fantasy",Nebula Nine TV
+#EXTINF:-1 tvg-id="nebulanine.scifi" tvg-name="Nebula Nine TV" tvg-logo="https://dummyimage.com/400x400/1e1b4b/a78bfa.png?text=N9" group-title="Live - Sci-Fi and Fantasy",Nebula Nine TV
 https://xtream-mock.onrender.com/live/test/test/110.m3u8
-#EXTINF:-1 tvg-id="quantumreel.scifi" tvg-name="Quantum Reel Channel" tvg-logo="https://dummyimage.com/400x400/1e1b4b/a78bfa.png&text=QR" group-title="Sci-Fi & Fantasy",Quantum Reel Channel
+#EXTINF:-1 tvg-id="quantumreel.scifi" tvg-name="Quantum Reel Channel" tvg-logo="https://dummyimage.com/400x400/1e1b4b/a78bfa.png?text=QR" group-title="Live - Sci-Fi and Fantasy",Quantum Reel Channel
 https://xtream-mock.onrender.com/live/test/test/111.m3u8
-#EXTINF:-1 tvg-id="dragonglass.fantasy" tvg-name="Dragonglass Fantasy TV" tvg-logo="https://dummyimage.com/400x400/14532d/fde047.png&text=DF" group-title="Sci-Fi & Fantasy",Dragonglass Fantasy TV
+#EXTINF:-1 tvg-id="dragonglass.fantasy" tvg-name="Dragonglass Fantasy TV" tvg-logo="https://dummyimage.com/400x400/14532d/fde047.png?text=DF" group-title="Live - Sci-Fi and Fantasy",Dragonglass Fantasy TV
 https://xtream-mock.onrender.com/live/test/test/112.m3u8
-#EXTINF:-1 tvg-id="mythwood.fantasy" tvg-name="Mythwood Channel" tvg-logo="https://dummyimage.com/400x400/14532d/fde047.png&text=MW" group-title="Sci-Fi & Fantasy",Mythwood Channel
+#EXTINF:-1 tvg-id="mythwood.fantasy" tvg-name="Mythwood Channel" tvg-logo="https://dummyimage.com/400x400/14532d/fde047.png?text=MW" group-title="Live - Sci-Fi and Fantasy",Mythwood Channel
 https://xtream-mock.onrender.com/live/test/test/113.m3u8
-#EXTINF:-1 tvg-id="emberash.fantasy" tvg-name="Ember & Ash Network" tvg-logo="https://dummyimage.com/400x400/14532d/fde047.png&text=EA" group-title="Sci-Fi & Fantasy",Ember & Ash Network
+#EXTINF:-1 tvg-id="emberash.fantasy" tvg-name="Ember and Ash Network" tvg-logo="https://dummyimage.com/400x400/14532d/fde047.png?text=EA" group-title="Live - Sci-Fi and Fantasy",Ember and Ash Network
 https://xtream-mock.onrender.com/live/test/test/114.m3u8
-#EXTINF:-1 tvg-id="velvetstatic.arts" tvg-name="Velvet Static Arts" tvg-logo="https://dummyimage.com/400x400/27272a/f472b6.png&text=VS" group-title="Arts & Culture",Velvet Static Arts
+#EXTINF:-1 tvg-id="velvetstatic.arts" tvg-name="Velvet Static Arts" tvg-logo="https://dummyimage.com/400x400/27272a/f472b6.png?text=VS" group-title="Live - Arts and Culture",Velvet Static Arts
 https://xtream-mock.onrender.com/live/test/test/115.m3u8
-#EXTINF:-1 tvg-id="obscuravision.arts" tvg-name="Obscura Vision TV" tvg-logo="https://dummyimage.com/400x400/27272a/f472b6.png&text=OV" group-title="Arts & Culture",Obscura Vision TV
+#EXTINF:-1 tvg-id="obscuravision.arts" tvg-name="Obscura Vision TV" tvg-logo="https://dummyimage.com/400x400/27272a/f472b6.png?text=OV" group-title="Live - Arts and Culture",Obscura Vision TV
 https://xtream-mock.onrender.com/live/test/test/116.m3u8
-#EXTINF:-1 tvg-id="classicframe.retro" tvg-name="Classic Frame TV" tvg-logo="https://dummyimage.com/400x400/78350f/fef3c7.png&text=CF" group-title="Retro & Classic TV",Classic Frame TV
+#EXTINF:-1 tvg-id="classicframe.retro" tvg-name="Classic Frame TV" tvg-logo="https://dummyimage.com/400x400/78350f/fef3c7.png?text=CF" group-title="Live - Retro and Classic TV",Classic Frame TV
 https://xtream-mock.onrender.com/live/test/test/117.m3u8
-#EXTINF:-1 tvg-id="vintagevault.retro" tvg-name="Vintage Vault Network" tvg-logo="https://dummyimage.com/400x400/78350f/fef3c7.png&text=VV" group-title="Retro & Classic TV",Vintage Vault Network
+#EXTINF:-1 tvg-id="vintagevault.retro" tvg-name="Vintage Vault Network" tvg-logo="https://dummyimage.com/400x400/78350f/fef3c7.png?text=VV" group-title="Live - Retro and Classic TV",Vintage Vault Network
 https://xtream-mock.onrender.com/live/test/test/118.m3u8
-#EXTINF:-1 tvg-id="retroray.retro" tvg-name="Retro Ray TV" tvg-logo="https://dummyimage.com/400x400/78350f/fef3c7.png&text=RR" group-title="Retro & Classic TV",Retro Ray TV
+#EXTINF:-1 tvg-id="retroray.retro" tvg-name="Retro Ray TV" tvg-logo="https://dummyimage.com/400x400/78350f/fef3c7.png?text=RR" group-title="Live - Retro and Classic TV",Retro Ray TV
 https://xtream-mock.onrender.com/live/test/test/119.m3u8
-#EXTINF:-1 tvg-id="signalcheck.test" tvg-name="SignalCheck Prime" tvg-logo="https://dummyimage.com/400x400/111827/ef4444.png&text=SC" group-title="Test Pattern Network",SignalCheck Prime
+#EXTINF:-1 tvg-id="signalcheck.test" tvg-name="SignalCheck Prime" tvg-logo="https://dummyimage.com/400x400/111827/ef4444.png?text=SC" group-title="Live - Test Pattern Network",SignalCheck Prime
 https://xtream-mock.onrender.com/live/test/test/120.m3u8
-#EXTINF:-1 tvg-id="waveform.test" tvg-name="Waveform Test Network" tvg-logo="https://dummyimage.com/400x400/111827/ef4444.png&text=WF" group-title="Test Pattern Network",Waveform Test Network
+#EXTINF:-1 tvg-id="waveform.test" tvg-name="Waveform Test Network" tvg-logo="https://dummyimage.com/400x400/111827/ef4444.png?text=WF" group-title="Live - Test Pattern Network",Waveform Test Network
 https://xtream-mock.onrender.com/live/test/test/121.m3u8
-#EXTINF:-1 tvg-id="circuitcity.test" tvg-name="Circuit City Broadcast" tvg-logo="https://dummyimage.com/400x400/111827/ef4444.png&text=CC" group-title="Test Pattern Network",Circuit City Broadcast
+#EXTINF:-1 tvg-id="circuitcity.test" tvg-name="Circuit City Broadcast" tvg-logo="https://dummyimage.com/400x400/111827/ef4444.png?text=CC" group-title="Live - Test Pattern Network",Circuit City Broadcast
 https://xtream-mock.onrender.com/live/test/test/122.m3u8
-#EXTINF:-1 tvg-id="ultravision.docs" tvg-name="UltraVision 4K" tvg-logo="https://dummyimage.com/400x400/164e63/5eead4.png&text=U4" group-title="Documentary & Nature",UltraVision 4K
+#EXTINF:-1 tvg-id="ultravision.docs" tvg-name="UltraVision 4K" tvg-logo="https://dummyimage.com/400x400/164e63/5eead4.png?text=U4" group-title="Live - Documentary and Nature",UltraVision 4K
 https://xtream-mock.onrender.com/live/test/test/124.m3u8
-#EXTINF:-1 tvg-id="crystalclarity.docs" tvg-name="Crystal Clarity Network" tvg-logo="https://dummyimage.com/400x400/164e63/5eead4.png&text=CC" group-title="Documentary & Nature",Crystal Clarity Network
+#EXTINF:-1 tvg-id="crystalclarity.docs" tvg-name="Crystal Clarity Network" tvg-logo="https://dummyimage.com/400x400/164e63/5eead4.png?text=CC" group-title="Live - Documentary and Nature",Crystal Clarity Network
 https://xtream-mock.onrender.com/live/test/test/125.m3u8
-#EXTINF:-1 tvg-id="deepearth.docs" tvg-name="Deep Earth Explorers" tvg-logo="https://dummyimage.com/400x400/164e63/5eead4.png&text=DE" group-title="Documentary & Nature",Deep Earth Explorers
+#EXTINF:-1 tvg-id="deepearth.docs" tvg-name="Deep Earth Explorers" tvg-logo="https://dummyimage.com/400x400/164e63/5eead4.png?text=DE" group-title="Live - Documentary and Nature",Deep Earth Explorers
 https://xtream-mock.onrender.com/live/test/test/133.m3u8
-#EXTINF:-1 tvg-id="harborlight.music" tvg-name="Harborlight Broadcasting" tvg-logo="https://dummyimage.com/400x400/581c87/f0abfc.png&text=HB" group-title="Music & Nightlife",Harborlight Broadcasting
+#EXTINF:-1 tvg-id="harborlight.music" tvg-name="Harborlight Broadcasting" tvg-logo="https://dummyimage.com/400x400/581c87/f0abfc.png?text=HB" group-title="Live - Music and Nightlife",Harborlight Broadcasting
 https://xtream-mock.onrender.com/live/test/test/126.m3u8
-#EXTINF:-1 tvg-id="lanternbay.music" tvg-name="Lantern Bay TV" tvg-logo="https://dummyimage.com/400x400/581c87/f0abfc.png&text=LB" group-title="Music & Nightlife",Lantern Bay TV
+#EXTINF:-1 tvg-id="lanternbay.music" tvg-name="Lantern Bay TV" tvg-logo="https://dummyimage.com/400x400/581c87/f0abfc.png?text=LB" group-title="Live - Music and Nightlife",Lantern Bay TV
 https://xtream-mock.onrender.com/live/test/test/127.m3u8
-#EXTINF:-1 tvg-id="metrowave.music" tvg-name="Metro Wave TV" tvg-logo="https://dummyimage.com/400x400/581c87/f0abfc.png&text=MW" group-title="Music & Nightlife",Metro Wave TV
+#EXTINF:-1 tvg-id="metrowave.music" tvg-name="Metro Wave TV" tvg-logo="https://dummyimage.com/400x400/581c87/f0abfc.png?text=MW" group-title="Live - Music and Nightlife",Metro Wave TV
 https://xtream-mock.onrender.com/live/test/test/128.m3u8
-#EXTINF:-1 tvg-id="downtownlive.music" tvg-name="Downtown Live Network" tvg-logo="https://dummyimage.com/400x400/581c87/f0abfc.png&text=DL" group-title="Music & Nightlife",Downtown Live Network
+#EXTINF:-1 tvg-id="downtownlive.music" tvg-name="Downtown Live Network" tvg-logo="https://dummyimage.com/400x400/581c87/f0abfc.png?text=DL" group-title="Live - Music and Nightlife",Downtown Live Network
 https://xtream-mock.onrender.com/live/test/test/129.m3u8
-#EXTINF:-1 tvg-id="vertigo.sports" tvg-name="Vertigo Extreme Sports" tvg-logo="https://dummyimage.com/400x400/7c2d12/fed7aa.png&text=VX" group-title="Sports & Action",Vertigo Extreme Sports
+#EXTINF:-1 tvg-id="vertigo.sports" tvg-name="Vertigo Extreme Sports" tvg-logo="https://dummyimage.com/400x400/7c2d12/fed7aa.png?text=VX" group-title="Live - Sports and Action",Vertigo Extreme Sports
 https://xtream-mock.onrender.com/live/test/test/134.m3u8
-#EXTINF:-1 tvg-id="concretewave.sports" tvg-name="Concrete Wave Network" tvg-logo="https://dummyimage.com/400x400/7c2d12/fed7aa.png&text=CW" group-title="Sports & Action",Concrete Wave Network
+#EXTINF:-1 tvg-id="concretewave.sports" tvg-name="Concrete Wave Network" tvg-logo="https://dummyimage.com/400x400/7c2d12/fed7aa.png?text=CW" group-title="Live - Sports and Action",Concrete Wave Network
 https://xtream-mock.onrender.com/live/test/test/135.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/thistledown-bandits.svg" group-title="Animated Adventures",Thistledown & the Forest Bandits
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/thistledown-bandits.svg" group-title="VOD - Animated Adventures",Thistledown and the Forest Bandits
 https://xtream-mock.onrender.com/movie/test/test/200.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/busters-payback.svg" group-title="Animated Adventures",Buster's Big Payback
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/busters-payback.svg" group-title="VOD - Animated Adventures",Buster's Big Payback
 https://xtream-mock.onrender.com/movie/test/test/201.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/meadow-king-revenge.svg" group-title="Animated Adventures",The Meadow King's Revenge
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/meadow-king-revenge.svg" group-title="VOD - Animated Adventures",The Meadow King's Revenge
 https://xtream-mock.onrender.com/movie/test/test/202.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/bramblewood-origins.svg" group-title="Animated Adventures",Bramblewood Chronicles: Origins
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/bramblewood-origins.svg" group-title="VOD - Animated Adventures",Bramblewood Chronicles: Origins
 https://xtream-mock.onrender.com/movie/test/test/203.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/bramblewood-directors-cut.svg" group-title="Animated Adventures",Bramblewood Chronicles: Director's Cut
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/bramblewood-directors-cut.svg" group-title="VOD - Animated Adventures",Bramblewood Chronicles: Director's Cut
 https://xtream-mock.onrender.com/movie/test/test/209.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/thistledown-redux.svg" group-title="Animated Adventures",Thistledown Redux
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/thistledown-redux.svg" group-title="VOD - Animated Adventures",Thistledown Redux
 https://xtream-mock.onrender.com/movie/test/test/210.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/dragonhunters-lament.svg" group-title="Fantasy Epics",The Dragonhunter's Lament
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/dragonhunters-lament.svg" group-title="VOD - Fantasy Epics",The Dragonhunter's Lament
 https://xtream-mock.onrender.com/movie/test/test/204.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/wings-of-ash.svg" group-title="Fantasy Epics",Wings of Ash
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/wings-of-ash.svg" group-title="VOD - Fantasy Epics",Wings of Ash
 https://xtream-mock.onrender.com/movie/test/test/205.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/whitecliff-hunters-tale.svg" group-title="Fantasy Epics",Whitecliff: A Hunter's Tale
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/whitecliff-hunters-tale.svg" group-title="VOD - Fantasy Epics",Whitecliff: A Hunter's Tale
 https://xtream-mock.onrender.com/movie/test/test/206.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/last-wyrmrider.svg" group-title="Fantasy Epics",The Last Wyrmrider
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/last-wyrmrider.svg" group-title="VOD - Fantasy Epics",The Last Wyrmrider
 https://xtream-mock.onrender.com/movie/test/test/207.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/iron-requiem.svg" group-title="Science Fiction",Iron Requiem
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/iron-requiem.svg" group-title="VOD - Science Fiction",Iron Requiem
 https://xtream-mock.onrender.com/movie/test/test/208.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/kriek-directive.svg" group-title="Science Fiction",The Kriek Directive
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/kriek-directive.svg" group-title="VOD - Science Fiction",The Kriek Directive
 https://xtream-mock.onrender.com/movie/test/test/211.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/steelbound-reclamation.svg" group-title="Science Fiction",Steelbound: Reclamation
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/steelbound-reclamation.svg" group-title="VOD - Science Fiction",Steelbound: Reclamation
 https://xtream-mock.onrender.com/movie/test/test/212.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/vertex-protocol.svg" group-title="Science Fiction",Vertex Protocol
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/vertex-protocol.svg" group-title="VOD - Science Fiction",Vertex Protocol
 https://xtream-mock.onrender.com/movie/test/test/213.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/wool-and-consequence.svg" group-title="Dark Comedy",Wool & Consequence
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/wool-and-consequence.svg" group-title="VOD - Dark Comedy",Wool and Consequence
 https://xtream-mock.onrender.com/movie/test/test/214.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/existential-sheep.svg" group-title="Dark Comedy",The Existential Sheep
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/existential-sheep.svg" group-title="VOD - Dark Comedy",The Existential Sheep
 https://xtream-mock.onrender.com/movie/test/test/215.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/francks-last-stand.svg" group-title="Dark Comedy",Franck's Last Stand
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/francks-last-stand.svg" group-title="VOD - Dark Comedy",Franck's Last Stand
 https://xtream-mock.onrender.com/movie/test/test/216.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/cognition-engine.svg" group-title="Arthouse & Experimental",The Cognition Engine
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/cognition-engine.svg" group-title="VOD - Arthouse and Experimental",The Cognition Engine
 https://xtream-mock.onrender.com/movie/test/test/217.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/labyrinth-rusted-thought.svg" group-title="Arthouse & Experimental",Labyrinth of Rusted Thought
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/labyrinth-rusted-thought.svg" group-title="VOD - Arthouse and Experimental",Labyrinth of Rusted Thought
 https://xtream-mock.onrender.com/movie/test/test/218.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/static-cathedral.svg" group-title="Arthouse & Experimental",Static Cathedral
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/static-cathedral.svg" group-title="VOD - Arthouse and Experimental",Static Cathedral
 https://xtream-mock.onrender.com/movie/test/test/219.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/studio-frame-7.svg" group-title="Studio Archive Reels",Studio Frame 7: Calibration
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/studio-frame-7.svg" group-title="VOD - Studio Archive Reels",Studio Frame 7: Calibration
 https://xtream-mock.onrender.com/movie/test/test/220.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/archive-reel-12.svg" group-title="Studio Archive Reels",Archive Reel No. 12
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/archive-reel-12.svg" group-title="VOD - Studio Archive Reels",Archive Reel No. 12
 https://xtream-mock.onrender.com/movie/test/test/221.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/broadcast-relic-4x3.svg" group-title="Studio Archive Reels",Broadcast Relic 4:3
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/broadcast-relic-4x3.svg" group-title="VOD - Studio Archive Reels",Broadcast Relic 4x3
 https://xtream-mock.onrender.com/movie/test/test/222.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/planet-in-motion.svg" group-title="Documentary",Planet in Motion: A 3D Chronicle
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/planet-in-motion.svg" group-title="VOD - Documentary",Planet in Motion: A 3D Chronicle
 https://xtream-mock.onrender.com/movie/test/test/226.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/concrete-and-motion.svg" group-title="Documentary",Concrete & Motion
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/concrete-and-motion.svg" group-title="VOD - Documentary",Concrete and Motion
 https://xtream-mock.onrender.com/movie/test/test/227.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/two-voices-one-frame.svg" group-title="Multi-Audio & Subtitle Test Clips",Two Voices, One Frame
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/two-voices-one-frame.svg" group-title="VOD - Multi-Audio and Subtitle Test Clips",Two Voices: One Frame
 https://xtream-mock.onrender.com/movie/test/test/223.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/silent-frequency.svg" group-title="Multi-Audio & Subtitle Test Clips",Silent Frequency
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/silent-frequency.svg" group-title="VOD - Multi-Audio and Subtitle Test Clips",Silent Frequency
 https://xtream-mock.onrender.com/movie/test/test/224.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/iron-requiem-accessible.svg" group-title="Multi-Audio & Subtitle Test Clips",Iron Requiem: Accessible Cut
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/iron-requiem-accessible.svg" group-title="VOD - Multi-Audio and Subtitle Test Clips",Iron Requiem: Accessible Cut
 https://xtream-mock.onrender.com/movie/test/test/225.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/iron-requiem-imsc.svg" group-title="Multi-Audio & Subtitle Test Clips",Iron Requiem: Subtitled Archive Cut
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/iron-requiem-imsc.svg" group-title="VOD - Multi-Audio and Subtitle Test Clips",Iron Requiem: Subtitled Archive Cut
 https://xtream-mock.onrender.com/movie/test/test/228.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/atmos-rising.svg" group-title="Multi-Audio & Subtitle Test Clips",Atmos Rising
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/atmos-rising.svg" group-title="VOD - Multi-Audio and Subtitle Test Clips",Atmos Rising
 https://xtream-mock.onrender.com/movie/test/test/229.m3u8
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-learning-iptv.svg" group-title="Demo Series",Learning IPTV - Episode 1 - Pilot
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-learning-iptv.svg" group-title="VOD - Demo Series",Learning IPTV - Episode 1 - Pilot
 https://xtream-mock.onrender.com/series/test/test/3001.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-learning-iptv.svg" group-title="Demo Series",Learning IPTV - Episode 2 - Rising Action
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-learning-iptv.svg" group-title="VOD - Demo Series",Learning IPTV - Episode 2 - Rising Action
 https://xtream-mock.onrender.com/series/test/test/3002.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-learning-iptv.svg" group-title="Demo Series",Learning IPTV - Episode 3 - Finale
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-learning-iptv.svg" group-title="VOD - Demo Series",Learning IPTV - Episode 3 - Finale
 https://xtream-mock.onrender.com/series/test/test/3003.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-kriek-files.svg" group-title="Fantasy & Sci-Fi Series",The Kriek Files - S01E01 - Reactivation
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-kriek-files.svg" group-title="VOD - Fantasy and Sci-Fi Series",The Kriek Files - S01E01 - Reactivation
 https://xtream-mock.onrender.com/series/test/test/3011.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-kriek-files.svg" group-title="Fantasy & Sci-Fi Series",The Kriek Files - S01E02 - The Vault Beneath
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-kriek-files.svg" group-title="VOD - Fantasy and Sci-Fi Series",The Kriek Files - S01E02 - The Vault Beneath
 https://xtream-mock.onrender.com/series/test/test/3012.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-kriek-files.svg" group-title="Fantasy & Sci-Fi Series",The Kriek Files - S01E03 - What Kriek Knew
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-kriek-files.svg" group-title="VOD - Fantasy and Sci-Fi Series",The Kriek Files - S01E03 - What Kriek Knew
 https://xtream-mock.onrender.com/series/test/test/3013.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-kriek-files.svg" group-title="Fantasy & Sci-Fi Series",The Kriek Files - S02E01 - New Directive
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-kriek-files.svg" group-title="VOD - Fantasy and Sci-Fi Series",The Kriek Files - S02E01 - New Directive
 https://xtream-mock.onrender.com/series/test/test/3021.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-kriek-files.svg" group-title="Fantasy & Sci-Fi Series",The Kriek Files - S02E02 - Fault Lines
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-kriek-files.svg" group-title="VOD - Fantasy and Sci-Fi Series",The Kriek Files - S02E02 - Fault Lines
 https://xtream-mock.onrender.com/series/test/test/3022.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-mythwood-tales.svg" group-title="Fantasy & Sci-Fi Series",Mythwood Tales - S01E01 - The Hunter's Ledger
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-mythwood-tales.svg" group-title="VOD - Fantasy and Sci-Fi Series",Mythwood Tales - S01E01 - The Hunter's Ledger
 https://xtream-mock.onrender.com/series/test/test/3031.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-mythwood-tales.svg" group-title="Fantasy & Sci-Fi Series",Mythwood Tales - S01E02 - Whitecliff Nights
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-mythwood-tales.svg" group-title="VOD - Fantasy and Sci-Fi Series",Mythwood Tales - S01E02 - Whitecliff Nights
 https://xtream-mock.onrender.com/series/test/test/3032.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-mythwood-tales.svg" group-title="Fantasy & Sci-Fi Series",Mythwood Tales - S01E03 - What the Wyrm Remembers
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-mythwood-tales.svg" group-title="VOD - Fantasy and Sci-Fi Series",Mythwood Tales - S01E03 - What the Wyrm Remembers
 https://xtream-mock.onrender.com/series/test/test/3033.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-mythwood-tales.svg" group-title="Fantasy & Sci-Fi Series",Mythwood Tales - S01E04 - Ashfall
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-mythwood-tales.svg" group-title="VOD - Fantasy and Sci-Fi Series",Mythwood Tales - S01E04 - Ashfall
 https://xtream-mock.onrender.com/series/test/test/3034.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-bramblewood-kids.svg" group-title="Demo Series",Bramblewood Kids - S01E01 - Morning Mischief
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-bramblewood-kids.svg" group-title="VOD - Demo Series",Bramblewood Kids - S01E01 - Morning Mischief
 https://xtream-mock.onrender.com/series/test/test/3041.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-bramblewood-kids.svg" group-title="Demo Series",Bramblewood Kids - S01E02 - The Great Acorn Heist
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-bramblewood-kids.svg" group-title="VOD - Demo Series",Bramblewood Kids - S01E02 - The Great Acorn Heist
 https://xtream-mock.onrender.com/series/test/test/3042.mp4
-#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-bramblewood-kids.svg" group-title="Demo Series",Bramblewood Kids - S01E03 - Rodents on the Run
+#EXTINF:-1 tvg-logo="https://xtream-mock.onrender.com/posters/series-bramblewood-kids.svg" group-title="VOD - Demo Series",Bramblewood Kids - S01E03 - Rodents on the Run
 https://xtream-mock.onrender.com/series/test/test/3043.mp4
