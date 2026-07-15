@@ -30,6 +30,7 @@ app.get("/healthz", (req, res) => res.json({ ok: true }));
 app.use(require("./routes/player_api"));
 app.use(require("./routes/m3u"));
 app.use(require("./routes/streams"));
+app.use(require("./routes/debug"));
 
 // EPG export - GET /xmltv.php?username=x&password=y
 app.get("/xmltv.php", (req, res) => {

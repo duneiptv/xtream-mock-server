@@ -26,6 +26,36 @@ Set `SERVER_HOST` to your machine's LAN IP (not `localhost`) if you're
 testing on a physical Android TV / Fire TV / LG / Samsung device rather than
 an emulator — those devices can't resolve your dev machine's `localhost`.
 
+## Diagnosing broken streams
+
+Since your deployed server has real outbound network access (unlike a
+sandboxed dev environment), it can check its own catalog directly:
+
+```
+GET /debug/check-sources
+```
+
+This hits every source URL in `data/live.js`, `data/movies.js`, and
+`data/series.js` (using `Range: bytes=0-0` so it doesn't download entire
+films just to check them) and returns real HTTP status per item:
+
+```json
+{
+  "total": 28, "working": 25, "broken": 3,
+  "results": [
+    { "type": "movie", "stream_id": 200, "name": "Big Buck Bunny (2008)", "ok": true, "status": 206 },
+    { "type": "live", "stream_id": 100, "name": "NASA TV Public", "ok": false, "status": 403 }
+  ]
+}
+```
+
+Run this after every deploy, or whenever something reports as broken —
+it turns "some VODs don't work" into an exact list of which `stream_id`s
+are actually failing and why (403 = blocked/hotlink-protected, 404 = moved
+or removed, timeout = origin down or unreachable from your host's network).
+Fix the specific broken entries in the relevant `data/*.js` file rather than
+guessing at the whole catalog.
+
 ## Deploying it live (not just localhost)
 
 The server reads one env var to know what URL to hand back to clients:
@@ -154,6 +184,28 @@ their own official listing page:
   public live test feeds, JW Player's public demo feed, and NASA TV (now
   pointed at their current `akamaized.net` endpoint - their old one had
   moved).
+
+### Multi-audio and subtitle content
+
+Under the **Multi-Audio & Subtitles** VOD category:
+
+- **Apple BipBop (16x9)** - Apple's own reference multi-track example. Its
+  manifest defines 2 selectable audio renditions and 2 English subtitle
+  tracks (regular + forced) via standard `EXT-X-MEDIA` tags - confirmed
+  directly against Apple's own developer forum, which shows the exact tags
+  in this file. Good default for testing audio/subtitle track-switching UI.
+- **Apple BipBop (HEVC)** - separate audio/video renditions plus WebVTT
+  subtitles, layered on top of HEVC codec testing.
+- **Tears of Steel - Hard-of-Hearing Subtitles** - Unified Streaming's
+  dedicated accessibility demo asset, packaged specifically with
+  hard-of-hearing subtitle tracks (dialogue plus non-speech audio cues).
+
+Most public domain/CC test content only has one audio track and no
+subtitles at all, so this is a deliberately curated subset rather than
+"every item" - these three are the ones with genuinely verified multiple
+tracks. If your test plan needs more languages specifically (not just
+multiple tracks), that requires either commercial reference content or
+packaging your own - most free public test assets don't ship dubbed audio.
 
 ### Why VOD is proxied instead of redirected
 
