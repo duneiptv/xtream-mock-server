@@ -137,23 +137,36 @@ http://<your-ip>:8080/get.php?username=test&password=test&type=m3u_plus&output=t
 
 ## Content sources
 
-Live "channels" and movies point at real, legally redistributable streams:
+The catalog now has 28 playable items (11 live channels, 14 movies, 3 series
+episodes) across live/VOD/series, all pointing at verified, widely-used
+public test infrastructure instead of one-off links:
 
-- **Movies**: Blender Foundation open films (Big Buck Bunny, Sintel, Tears of
-  Steel, Cosmos Laundromat) — CC-BY 3.0, served directly from
-  `download.blender.org` / `mango.blender.org`, which are stable long-term hosts.
-- **Live**: Apple's official public HLS test stream (very stable — used
-  industry-wide), a Mux public test stream, and NASA's public stream.
+- **Movies & series episodes**: served from Google's `gtv-videos-bucket`
+  sample set (`storage.googleapis.com/gtv-videos-bucket/sample/...`) —
+  published by Google for Chromecast/Google TV sample-app testing and used
+  as the de facto standard public test-video set across the industry for
+  years. Includes the Blender Foundation's Creative Commons (CC-BY) short
+  films (Big Buck Bunny, Elephants Dream, Sintel, Tears of Steel) plus
+  several Google-produced demo/ad clips also released for public sample use.
+- **Live channels**: Apple's official public HLS test streams (`bipbop`
+  variants — the same ones Apple's own developer docs use), Mux's public
+  test streams (`test-streams.mux.dev`), Akamai's public live test feeds,
+  and a couple of the same Google-bucket movies looped as "channels." NASA's
+  public stream is also included but is the least stable of the bunch (see
+  warning below).
 
 ⚠️ **Third-party URLs can rot.** NASA in particular has changed its public
-stream endpoint before. If a channel stops playing, open `data/live.js` and
-swap in a fresh URL — [Apple's HLS examples
-page](https://developer.apple.com/streaming/examples/) and
-[test-streams.mux.dev](https://test-streams.mux.dev/) are good places to find
-current public test streams. `bitdash-a.akamaihd.net` (from the original
-ChatGPT suggestion) is a deprecated Bitmovin demo domain that's frequently
-down — it's been swapped out here for sources hosted directly by the
-Blender Foundation instead.
+stream endpoint before, and any of these could theoretically go down. If a
+channel or movie stops playing:
+1. Open `data/live.js` or `data/movies.js` and find the entry by `stream_id`.
+2. Swap the `source` value for a fresh one. Good places to find current
+   public test streams: [Apple's HLS examples
+   page](https://developer.apple.com/streaming/examples/),
+   [test-streams.mux.dev](https://test-streams.mux.dev/), or search "public
+   HLS test stream" / "M3U8 test URLs" for current community-maintained lists.
+3. Avoid `bitdash-a.akamaihd.net` — it's a deprecated Bitmovin demo domain
+   that's frequently down; everything here has already been steered away
+   from it.
 
 ## Using your own local media instead
 
