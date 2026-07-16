@@ -6,25 +6,25 @@ reviewed.
 
 ## Server Access
 
-**Xtream Codes login**
+**Xtream Codes login (required for full content - Live TV + VOD)**
 - Server URL: `https://xtream-mock.onrender.com`
 - Username: `test`
 - Password: `test`
 
-**M3U URL**
+**M3U URL / M3U file (Live TV only)**
 ```
 https://xtream-mock.onrender.com/get.php?username=test&password=test&type=m3u_plus&output=ts
 ```
-
-**M3U file**
-A downloadable `playlist.m3u` file is also attached, in case the app
-requires uploading a playlist file rather than a URL.
+A downloadable `playlist.m3u` file is also attached. Note: movies (VOD)
+are not available through this method - please use the Xtream Codes login
+above to review VOD content.
 
 ## Multi-audio-track and subtitle content
 
 For testing audio-track switching and subtitles, use the VOD category
-**"Multi-Audio & Subtitle Test Clips"**. Every title in that category has
-multiple audio tracks and/or subtitle tracks available.
+**"Multi-Audio and Subtitle Test Clips"** (accessible via Xtream Codes
+login). Every title in that category has multiple audio tracks and/or
+subtitle tracks available.
 
 ## Note on playback
 

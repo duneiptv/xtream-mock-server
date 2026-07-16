@@ -38,8 +38,6 @@ const SRC = {
   bipbopHevc: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8",
   muxDai: "https://test-streams.mux.dev/dai-discontinuity-deltatre/manifest.m3u8",
   advDvAtmos: "https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8",
-  historicPlanet: "https://devstreaming-cdn.apple.com/videos/streaming/examples/historic_planet_content_2023-10-26-3d-video/main.m3u8",
-  skate4k: "https://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8",
 };
 
 const STUDIOS = ["Lumen Peak Studios", "Northlight Pictures", "Obsidian Frame Films", "Wanderlight Media", "Cobalt Owl Studios", "Driftwood Cinema Co.", "Half Moon Films", "Amberlyn Pictures", "Thistle & Vine Productions", "Graymantle Studios"];
@@ -81,8 +79,8 @@ const vodStreams = [
   { num: 23, name: "Broadcast Relic 4x3", stream_id: 222, category_id: "16", container_extension: "m3u8", source: SRC.bipbop4x3, stream_icon: poster("broadcast-relic-4x3"), plot: "Recovered from a station's tape vault before the transition to widescreen.", cast: "Archival material - no credited cast", director: "Unknown", studio: "Graymantle Archive Division", rating: "n/a", releasedate: "1994-11-02" },
 
   // --- Documentary (new historic-planet source) ---
-  { num: 24, name: "Planet in Motion: A 3D Chronicle", stream_id: 226, category_id: "17", container_extension: "m3u8", source: SRC.historicPlanet, stream_icon: poster("planet-in-motion"), plot: "A sweeping, large-format nature chronicle shot for 3D and high dynamic range display - built to stress-test premium playback.", cast: "Narrated by Ingrid Solheim", director: "Petra Vasilenko", studio: STUDIOS[1], rating: "8.4", releasedate: "2024-02-01", tech_note: "UHD, Dolby Vision, multiple Dolby Digital/Atmos audio tracks, and subtitle/CC tracks." },
-  { num: 25, name: "Concrete and Motion", stream_id: 227, category_id: "17", container_extension: "m3u8", source: SRC.skate4k, stream_icon: poster("concrete-and-motion"), plot: "A high-frame-rate documentary short following skaters through an abandoned industrial district, shot on phantom flex cameras for ultra-slow-motion sequences.", cast: "Featuring: Callum Beaumont, Kaia Munro", director: "Dario Castellano", studio: STUDIOS[5], rating: "7.7", releasedate: "2023-11-20" },
+  { num: 24, name: "Wild Meadow: A Season in the Grass", stream_id: 226, category_id: "17", container_extension: "mp4", source: SRC.bbb, stream_icon: poster("wild-meadow-season"), plot: "A quiet, observational documentary following a single meadow through a full season of change, from first thaw to first frost.", cast: "Narrated by Ingrid Solheim", director: "Petra Vasilenko", studio: STUDIOS[1], rating: "8.1", releasedate: "2023-05-14" },
+  { num: 25, name: "The Last Broadcast Tower", stream_id: 227, category_id: "17", container_extension: "m3u8", source: SRC.bipbop4x3, stream_icon: poster("last-broadcast-tower"), plot: "A short documentary on the final years of a regional analog broadcast tower before it was decommissioned - interviews with the engineers who kept it running.", cast: "Featuring: Callum Beaumont, Kaia Munro", director: "Dario Castellano", studio: STUDIOS[5], rating: "7.6", releasedate: "2022-11-20" },
 
   // --- Multi-Audio and Subtitle Test Clips (genuinely verified multi-track sources) ---
   { num: 26, name: "Two Voices: One Frame", stream_id: 223, category_id: "14", container_extension: "m3u8", source: SRC.bipbop16x9, stream_icon: poster("two-voices-one-frame"), plot: "A dual-narration piece designed to be experienced twice - once in each of its two audio tracks - with optional subtitles for both cuts.", cast: "Voice work: Dario Castellano, Kaia Munro", director: "Selene Okonkwo", studio: STUDIOS[5], rating: "n/a", releasedate: "2020-01-01", tech_note: "2 selectable audio renditions + 2 English subtitle tracks (regular + forced)." },
